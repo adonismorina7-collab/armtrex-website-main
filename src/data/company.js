@@ -71,7 +71,6 @@ export const company = {
 
   certifications: [],
   credentials: [
-    { kind: 'certification', label: 'Certification', value: 'ISO 27001' },
     { kind: 'certification', label: 'Certification', value: 'Cyber Essentials Plus' },
     { kind: 'governance', label: 'Governance', value: 'Sanctions & Compliance Management' },
   ],
