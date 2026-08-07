@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+  <g fill="none" stroke="#c19a3e" stroke-width="1.5" opacity="0.55">
+    <polygon points="120,20 350,250 120,480 -110,250" />
+    <polygon points="420,-60 760,280 420,620 80,280" />
+    <polygon points="760,60 1010,310 760,560 510,310" />
+    <polygon points="1040,-40 1300,220 1040,480 780,220" />
+  </g>
+</svg>
