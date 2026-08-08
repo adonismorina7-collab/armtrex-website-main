@@ -5,6 +5,7 @@ import { useT } from '../i18n/ui.js'
 const links = [
   { to: '/', key: 'nav.home', end: true },
   { to: '/products', key: 'nav.products' },
+  { to: '/kyc', key: 'nav.kyc' },
   { to: '/contact', key: 'nav.contact' },
 ]
 
