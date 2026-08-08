@@ -22,15 +22,15 @@ export default function Contact() {
       }
     : null
 
-  return (
-    <>
-      <section className="page-hero contact-hero" aria-labelledby="contact-heading">
-        <div className="container">
-          <span className="kicker">{t('contact.kicker')}</span>
-          <h1 id="contact-heading">{t('contact.heading')}</h1>
-          <p className="page-lead">{t('contact.lead')}</p>
-        </div>
-      </section>
+      return (
+  <>
+    <header className="page-hero">
+      <div className="container">
+        <span className="kicker">{t('contact.kicker')}</span>
+        <h1>{t('contact.heading')}</h1>
+        <p>{t('contact.lead')}</p>
+      </div>
+    </header>
 
       <section className="section contact-section">
         <div className="container contact-layout">
@@ -45,19 +45,25 @@ export default function Contact() {
             </article>
 
             <article className="contact-block">
-              <h2>{t('contact.directLines')}</h2>
-              <ul className="contact-list">
-                <li>
-                  <span className="contact-label">{t('loc.email')}</span>
-                  <a href={`mailto:${contact.email}`}>{contact.email}</a>
-                </li>
-                <li>
-                  <span className="contact-label">{t('loc.website')}</span>
-                  <span>{contact.website}</span>
-                </li>
-              </ul>
-            </article>
+  <h2>{t('contact.directLines')}</h2>
+  <ul className="contact-list">
+    <li>
+      <span className="contact-label">{t('loc.email')}</span>
+      <a href={`mailto:${contact.email}`}>{contact.email}</a>
+    </li>
 
+    <li>
+      <span className="contact-label">{t('loc.website')}</span>
+      <a
+        href={`https://${contact.website}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {contact.website}
+      </a>
+    </li>
+  </ul>
+</article>
             <article className="contact-block contact-compliance-note">
               <div className="compliance-note-icon" aria-hidden="true">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">

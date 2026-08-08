@@ -53,7 +53,13 @@ export default function AddressSection() {
               </li>
               <li>
                 <span className="address-label">{t('loc.website')}</span>
-                <span>{contact.website}</span>
+                <a
+  href={`https://${contact.website}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {contact.website}
+</a>
               </li>
             </ul>
           </article>
